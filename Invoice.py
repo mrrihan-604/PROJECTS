@@ -1,0 +1,32 @@
+custommer_name=input("Enter Customer Name:")
+product_name=input("Enter Product Name:")
+product_price=float(input("Enter Product Price:"))
+quntity=int(input("Enter Quantity:"))
+gst=float(input("Enter GST percentage:"))
+delavery_charges=float(input("Enter Delivery Charge:"))
+id="02 june 2026"
+
+total_price=product_price*quntity
+gst_amount=total_price*(gst/100)
+final_amount=total_price+gst_amount+delavery_charges
+print("\n"+"-"*75)
+print("                            SUPERMART ONLINE     ")
+print("                                INVOICE          ")
+print("-"*75)
+print(f"\nCustomer Name  : {custommer_name}")
+print(f"Invoice Number   : INV20250S20")
+print(f"Invoice Date     : 20 May 2025 ")
+
+print("\n"+"-"*75)
+print(f"{'PRODUCT DETAILS':<20} {'PRICE(INR)':<20} {'QUANTITY':<20} {'Total(INR)':<20}")
+print(f"\n{product_name:<20} {product_price:<20} {quntity:<20} {total_price}")
+print("-"*75)
+print(f"{'Total Price':<62} {total_price}")
+print(f"{'GST({gst})':<62} {gst_amount:.2f}")
+print(f"{'Delivery Charge':<62} {delavery_charges:.2f}")
+print("-"*75)
+print(f"{'Final Bill Amount':<20} {final_amount}\n")
+print("-"*75)
+print("       Thank you for shopping with ShopSmart!")
+print("-"*75)
+print("\n")
