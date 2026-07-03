@@ -1,9 +1,12 @@
 # Employee Attendance Management System
 print("\n")
 total_working_days = 30
+
+# Take employee name and attendance days as input
 employee_name = input("Enter employee name: ")
 attendance_days = int(input("Enter number of days attended: "))
 
+# Calculate attendance percentage
 attendance_percentage = (attendance_days / total_working_days) * 100
 print("\n")
 print("          Employee Attendance Report         ")
@@ -13,6 +16,7 @@ print(f"Total Working Days      : {total_working_days}")
 print(f"Days Attended           : {attendance_days}")
 print(f"Attendance Percentage   : {attendance_percentage:.2f}%")
 
+# Check attendance status and display bonus/salary eligibility
 if attendance_percentage >= 95:
     print("Status               : Excellent Attendance Elegible for Bonus")
 elif attendance_percentage < 95 and attendance_percentage >= 75:

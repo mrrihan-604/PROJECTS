@@ -1,3 +1,4 @@
+# Program to generate and display Employee Salary Slip
 # 1. Store Employee Details
 employee_name = "Rahul Sharma"
 employee_id = 10123
@@ -11,11 +12,11 @@ hra = 15000.0
 da = 10000.0
 tax = 7500.0
 
-# 3. Calculations
+# 3. Calculate gross and net salary
 gross_salary = basic_salary + hra + da
 net_salary = gross_salary - tax
 
-# 4. Display the Salary Slip
+# 4. Display the Salary Slip with formatted output
 print("-" * 50)
 print("             ABC SOLUTIONS PVT. LTD.")
 print("               Employee Salary Slip")
@@ -32,6 +33,7 @@ print(f"{'DA':<35} {da:>12,.2f}")
 print(f"{'Gross Salary (Basic + HRA + DA)':<35} {gross_salary:>12,.2f}")
 print(f"{'Tax':<35} {tax:>12,.2f}")
 print("-" * 50)
+# Display final net salary
 print(f"{'Net Salary (Gross Salary - Tax)':<35} {net_salary:>12,.2f}")
 print("-" * 50)
 print("       Thank you for your hard work and dedication!")

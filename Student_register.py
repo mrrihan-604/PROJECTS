@@ -1,3 +1,4 @@
+# Take student information and course details as input
 student_name=input("Enter Student Name:")
 student_id=input("Enter Student ID:")
 course_name=input("Enter Course Name:")
@@ -7,8 +8,10 @@ mobile=input("Enter Mobile Number:")
 course_fee=float(input("Enter Course Fee:"))
 registration_fee=float(input("Enter Registration Fee:"))
 
+# Calculate remaining fee after deducting registration fee
 remaining_fee=course_fee-registration_fee
 
+# Display registration slip header and student details
 print("\n")
 print("  DIGITAL DREAMS INTERNSHIP ")
 print("    ---------------------   ")
@@ -23,6 +26,7 @@ print(f"Mobile Number    : {mobile}")
 print(f"Course Fee       : {course_fee}")
 print(f"Registration Fee : {registration_fee}")
 print("-"*50)
+# Display fee summary
 print(f"Remaining Fee    : {remaining_fee}")
 print("\n")
 print("Welcome to Digital Dreams Internship! ")

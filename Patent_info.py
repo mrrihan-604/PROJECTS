@@ -1,3 +1,4 @@
+# Take patient information and fee details as input
 name=input("Enter patient Name:")
 age=int(input("Enter patient Age:"))
 gender=input("Enter patient Gender:")
@@ -7,7 +8,11 @@ height=float(input("Enter patient Height:"))
 consulation_fee=float(input("Enter Consultation Fee:"))
 registration_charges=float(input("Enter Registration charges:"))
 print("\n")
+
+# Calculate total fee from consultation and registration charges
 total_fee=consulation_fee+registration_charges
+
+# Display hospital header and patient information card
 print("          RihanRK SPECIAL HOSPITAL ")
 print("          Patient information card  ")
 print("-"*50)
@@ -20,6 +25,7 @@ print(f"Patient Height       : {height}")
 print(f"Consultation Fee     : {consulation_fee}")
 print(f"Registration Charges : {registration_charges}")
 print("-"*50)
+# Display total fee summary
 print(f"Total Fee            : {total_fee}")
 print("\n")
 print("Thank you for visiting. We wish you a speedy recovery!")
