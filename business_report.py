@@ -1,0 +1,27 @@
+# This is a simple business report generator
+print("     Digital Dreams LTD")
+income = float(input("Enter your monthly income: "))
+expenses = float(input("Enter your monthly expenses: "))
+
+profit = income - expenses
+print("-" * 30)
+print("Business Report")
+print("-" * 30)
+print(f"Monthly Income   : {income:.2f}/-")
+print(f"Monthly Expenses : {expenses:.2f}/-")
+
+if income == 0:
+    print("-" * 30)
+    print("Company is broke.")
+elif income > expenses:
+    print(f"Your monthly profit is: {profit:.2f}/-")
+    print("-" * 30)
+    print("Company is making a profit.")
+elif income < expenses:
+    print(f"Your monthly loss is: {abs(profit):.2f}/-")
+    print("-" * 30)
+    print("Company is running at a loss.")
+else:
+    print("-" * 30)
+    print("Company is not making any profit or loss.")
+print("\n")
