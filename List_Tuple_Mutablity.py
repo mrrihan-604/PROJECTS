@@ -10,8 +10,8 @@ completed_task = task_queue.pop(0)
 print(f"Remaining Task Queue: {task_queue}")
 
 office_branches_logs = [
-    (12.9716, 77.5946),  # Bengaluru Office 📍
-    (13.0827, 80.2707),  # Chennai Hub 📍
+    (12.9716, 77.5946),  # Bengaluru Office 
+    (13.0827, 80.2707),  # Chennai Hub 
 ]
 
 print(f"Office Locations Coordinates: {office_branches_logs}")
