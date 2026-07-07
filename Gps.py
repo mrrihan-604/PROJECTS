@@ -9,8 +9,8 @@ route_lang_lan= [
 ]
 
 # Access individual latitude/longitude values via indexing
-first_stop = route_lang_lan[0]
-print(f"First Stop - Latitude: {first_stop[0]}, Longitude: {first_stop[1]}")
+for routes in route_lang_lan:
+    print(f"Stops : {routes}")
 
 # Demonstrate that attempting to modify a tuple raises an error
 try:
